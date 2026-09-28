@@ -1,0 +1,3 @@
+date -I seconds
+
+cat /tmp/xxx | jq '.[] | select(.vendor_resource != null)'   | grep request_status | wc -l
